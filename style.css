@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Nav bar */
+.navbar{
+    background-color: #000000;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    justify-content: space-between;
+    align-content: center;
+    margin: auto;
+    flex: 1;
+}
+/* List Items */
+.grow-list{
+    display: flex;
+    flex: 1;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    color: #ffffff;
+    margin: auto;
+    gap: 25px;
+}
+.list-item:hover{
+    color: #c03ac0;
+    cursor: pointer;
+}
+/* Fixing postion of logo */
+.main-logo{
+    display: flex;
+    flex: 0.3;
+    flex-direction: row-reverse;
+    margin: auto;
+}
+/* Resize Logo */
+.logo{
+    height: 40px;
+}
+/* Line between logo and Components */
+.line{
+    height: 6.6vh;
+    display: flex;
+    flex: 0.1;
+    margin: auto;
+}
+span{
+    display: flex;
+    align-items: center;
+    margin: 0 70px;
+    border-right: 1px solid white;
+}
+/* NavBar Button */
+.button-group{
+    margin: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse
+}
+.button-small{
+    background-color: #c03ac0;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #f8f8f8;
+    margin: 0px 45px;
+}
+/* Content - Section */
+
+.content{
+    background: url(./assets/bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.content h1{
+    color: #faebd7;
+    font-size: 60px;
+    font-family: Lucida Sans;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button-large{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(192, 58, 192);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+
+/* For responsive */
+@media (max-width:1250px){
+    .content h1{
+        font-size: 40px;
+    }
+  
+}
+@media (max-width:900px){
+    .content h1{
+        font-size: 30px;
+    }
+}
